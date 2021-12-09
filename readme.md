@@ -6,13 +6,16 @@
 
 
 1. SSM requires the instance to have a role associated with SSM permissions.  More details can be found [here](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-profile.html).
-    - The shell script can be found [here](ssm_notes.sh).
-
+    - A sample shell script can be found [here](ssm_notes.sh).  This script is meant to run on various flavors of linux and should be modified to suit your individual needs.
 2. SSM Parameter Store is used to create 4 parameters that are called in the script.  API Key, Site Token, Console Prefix, and Version.  This screenshot shows the API Key and Site Token as both unencrypted and secure.  The script calls the secure iteration of the string.
-    - API Key - i.e.  LGPZhvVH6TThq28ncIlBxg****************************kxqxaRpwE5iHoDAfN1G5d
-    - Site Token - i.e.   eyJ1cmwiOiAiaHR0cHM6Ly91c2VhMS1w**********************************ogIjBhYjQyMzUyMGIxOTNjYzMifQ==
-    - Console Prefix - i.e.  usea1-purple
-    - Version - i.e  ga     
+    - API Key 
+        - i.e. - LGPZhvVH6TThq28ncIlBxg****************************kxqxaRpwE5iHoDAfN1G5d
+    - Site Token 
+        - i.e. - eyJ1cmwiOiAiaHR0cHM6Ly91c2VhMS1w**********************************ogIjBhYjQyMzUyMGIxOTNjYzMifQ==
+    - Console Prefix 
+        - i.e. - usea1-purple
+    - Version 
+        - i.e. - ga     
         - **NOTE** Case Sensitive
 
     ![alt_text](images/image1.png "image_tooltip")
